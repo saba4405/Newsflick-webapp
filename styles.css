@@ -1,0 +1,303 @@
+/* ===== Base Styles ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --background-light: #f3faff;
+    --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --transition-fast: all 0.2s ease;
+    --transition-medium: all 0.3s ease;
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+    background-color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* ===== Typography ===== */
+p {
+    color: var(--secondary-text-color);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-fast);
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===== Utility Classes ===== */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    overflow: hidden;
+}
+
+/* ===== Navigation ===== */
+nav {
+    background-color: var(--background-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.main-nav {
+    justify-content: space-between;
+    padding-block: 12px;
+}
+
+.company-logo img {
+    width: 120px;
+    transition: var(--transition-medium);
+}
+
+.company-logo:hover img {
+    transform: scale(1.05);
+}
+
+.nav-links ul {
+    gap: 24px;
+}
+
+.hover-link {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-medium);
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+    background-color: rgba(34, 148, 237, 0.1);
+}
+
+.hover-link:active {
+    transform: scale(0.96);
+}
+
+.nav-item.active {
+    color: var(--accent-color);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+/* ===== Search Bar ===== */
+.search-bar {
+    height: 40px;
+    gap: 12px;
+}
+
+.news-input {
+    width: 220px;
+    height: 100%;
+    padding-inline: 16px;
+    border-radius: var(--border-radius-sm);
+    border: 2px solid #bbd0e2;
+    font-family: inherit;
+    transition: var(--transition-medium);
+}
+
+.news-input:focus {
+    border-color: var(--accent-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(34, 148, 237, 0.2);
+}
+
+.search-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    transition: var(--transition-medium);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.search-button:hover {
+    background-color: var(--accent-color-dark);
+    transform: translateY(-1px);
+}
+
+.search-button:active {
+    transform: translateY(0);
+}
+
+/* ===== Main Content ===== */
+main {
+    padding-block: 28px;
+    margin-top: 80px;
+}
+
+/* ===== Cards ===== */
+.cards-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: start;
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: var(--card-shadow);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: var(--transition-medium);
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+.card-header {
+    overflow: hidden;
+    height: 180px;
+}
+
+.card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-medium);
+}
+
+.card:hover .card-header img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+
+.card-description {
+    color: var(--secondary-text-color);
+    margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-source {
+    margin-block: 12px;
+    font-size: 0.85rem;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.news-source::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+/* ===== Weather Widget ===== */
+.weather-widget-container {
+    background: linear-gradient(135deg, #f3faff 0%, #e6f2ff 100%);
+    padding: 16px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(187, 208, 226, 0.4);
+    margin-bottom: 24px;
+}
+
+#openweathermap-widget-18 {
+    margin: 0 auto;
+    border-radius: var(--border-radius-md) !important;
+    box-shadow: var(--card-shadow) !important;
+    font-family: "Poppins", sans-serif !important;
+    transition: var(--transition-medium);
+    border: none !important;
+}
+
+#openweathermap-widget-18:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        gap: 16px;
+        padding-block: 16px;
+    }
+    
+    .nav-links ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .search-bar {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .news-input {
+        width: 60%;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
