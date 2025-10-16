@@ -22,7 +22,7 @@ A responsive web app that aggregates real-time news and integrates weather data 
 ![desktop view](screenshots/desktopview.jpg)
 
 ### Dark Mode
-![dark mode](screenshots/darkmode.jpg)
+![darkmode](screenshots/darkmode.jpg)
 
 ### Light Mode
 ![light mode](screenshots/lightmode.jpg)
