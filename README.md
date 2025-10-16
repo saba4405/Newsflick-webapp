@@ -19,19 +19,19 @@ A responsive web app that aggregates real-time news and integrates weather data 
 ##  Screenshots  
 
 ### Desktop View
-![desktop view](screenshots/desktop-view.png)
+![desktop view](screenshots/desktop view.jpg)
 
 ### Dark Mode
-![dark mode](screenshots/dark-mode.png)
+![dark mode](screenshots/dark mode.jpg)
 
 ### Light Mode
-![light mode](screenshots/light-mode.png)
+![light mode](screenshots/light mode.jpg)
 
 ### Bookmark Article
 ![bookmark](screenshots/bookmark.jpg)
 
 ### Remove Bookmark
-![remove bookmark](screenshots/remove-bookmark.png)
+![remove bookmark](screenshots/remove bookmark.jpg)
    
 
 ## 📂 Project Structure  
