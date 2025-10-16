@@ -3,7 +3,7 @@
 A responsive web app that aggregates real-time news and integrates weather data using **NewsAPI** and **OpenWeatherMap API**.
 
 ##  Live Demo  
-[Try it now](https://your-deployed-link.com)
+[Try it now](https://saba4405.github.io/Newsflick-web-app/)
 
 ##  Tech Stack  
 - **HTML5**  
