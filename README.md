@@ -31,7 +31,7 @@ A responsive web app that aggregates real-time news and integrates weather data 
 ![bookmark](screenshots/bookmark.jpg)
 
 ### Remove Bookmark
-![remove bookmark](screenshots/removebookmark.jpg)
+![remove bookmark](screenshots/remove_bookmark.jpg)
    
 
 ## 📂 Project Structure  
