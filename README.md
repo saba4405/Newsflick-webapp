@@ -28,7 +28,7 @@ A responsive web app that aggregates real-time news and integrates weather data 
 ![light mode](screenshots/light-mode.png)
 
 ### Bookmark Article
-![bookmark](screenshots/bookmark.png)
+![bookmark](screenshots/bookmark.jpg)
 
 ### Remove Bookmark
 ![remove bookmark](screenshots/remove-bookmark.png)
