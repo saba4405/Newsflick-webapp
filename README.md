@@ -17,7 +17,22 @@ A responsive web app that aggregates real-time news and integrates weather data 
 - Displays current weather for a chosen location  
 
 ##  Screenshots  
-![Desktop view](screenshots/desktop.png)   
+
+### Desktop View
+![Desktop View](screenshots/desktop-view.png)
+
+### Dark Mode
+![Dark Mode](screenshots/dark-mode.png)
+
+### Light Mode
+![Light Mode](screenshots/light-mode.png)
+
+### Bookmark Article
+![Bookmark](screenshots/bookmark.png)
+
+### Remove Bookmark
+![Remove Bookmark](screenshots/remove-bookmark.png)
+   
 
 ## 📂 Project Structure  
 newsflick-webapp/
